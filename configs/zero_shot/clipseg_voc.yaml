@@ -1,0 +1,27 @@
+ORACLE: True
+MODEL:
+  META_ARCHITECTURE: "CLIPSeg"
+INPUT:
+  DATASET_MAPPER_NAME: "obj_part_semantic"
+DATASETS:
+  TRAIN: ("voc_obj_part_sem_seg_train",)
+  TEST: ("voc_obj_part_sem_seg_val_obj_condition",)
+DATALOADER:
+  FILTER_EMPTY_ANNOTATIONS: True
+  NUM_WORKERS: 8
+SOLVER:
+  IMS_PER_BATCH: 8
+  BASE_LR: 0.0001
+  MAX_ITER: 20000
+  WARMUP_FACTOR: 1.0
+  WARMUP_ITERS: 0
+  WEIGHT_DECAY: 0.0001
+  OPTIMIZER: "ADAMW"
+  LR_SCHEDULER_NAME: "WarmupPolyLR"
+  CLIP_GRADIENTS:
+    ENABLED: True
+    CLIP_TYPE: "full_model"
+    CLIP_VALUE: 0.01
+    NORM_TYPE: 2.0
+TEST:
+  EVAL_PERIOD: 5000

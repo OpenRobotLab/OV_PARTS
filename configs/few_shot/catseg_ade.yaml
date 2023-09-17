@@ -1,0 +1,58 @@
+ORACLE: True
+_BASE_: base_catseg_config.yaml
+MODEL:
+  META_ARCHITECTURE: "CATSeg"
+  BACKBONE:
+    FREEZE_AT: 0
+    NAME: "build_resnet_backbone"
+  WEIGHTS: "pretrain_weights/model_final_base.pth"
+  RESNETS:
+    DEPTH: 101
+    STEM_TYPE: "basic" 
+    STEM_OUT_CHANNELS: 64
+    STRIDE_IN_1X1: False
+    OUT_FEATURES: ["res2", "res3", "res4"]
+  PIXEL_MEAN: [123.675, 116.280, 103.530]
+  PIXEL_STD: [58.395, 57.120, 57.375]
+  SEM_SEG_HEAD:
+    NAME: "CATSegHead"
+    IN_FEATURES: ["res2", "res3", "res4"]
+    IGNORE_VALUE: 255
+    NUM_CLASSES: 74
+    BG_ON: True
+    CLIP_PRETRAINED: "ViT-B/16"
+    PROMPT_DEPTH: 0
+    PROMPT_LENGTH: 0
+    TEXT_GUIDANCE_DIM: 512
+    TEXT_GUIDANCE_PROJ_DIM: 128
+    APPEARANCE_GUIDANCE_DIM: 1024
+    APPEARANCE_GUIDANCE_PROJ_DIM: 128
+    DECODER_DIMS: [64, 32]
+    DECODER_GUIDANCE_DIMS: [512, 256]
+    DECODER_GUIDANCE_PROJ_DIMS: [32, 16]
+    NUM_LAYERS: 2
+    NUM_HEADS: 4
+    HIDDEN_DIMS: 128
+    POOLING_SIZES: [2, 2]
+    FEATURE_RESOLUTION: [24, 24]
+    WINDOW_SIZES: 12
+    ATTENTION_TYPE: "linear"
+    CLIP_FINETUNE: ""
+  PROMPT_ENSEMBLE_TYPE: "imagenet"
+INPUT:
+  DATASET_MAPPER_NAME: "obj_part_semantic"
+  MAX_SIZE_TRAIN: 768
+  MAX_SIZE_TEST: 768
+DATASETS:
+  TRAIN: ("ade_obj_part_sem_seg_train_few_shot",)
+  TEST: ("ade_obj_part_sem_seg_val_obj_few_shot",)
+DATALOADER:
+  FILTER_EMPTY_ANNOTATIONS: True
+  NUM_WORKERS: 4
+SOLVER:
+  BACKBONE_MULTIPLIER: 0.01
+  BASE_LR: 0.0002
+  IMS_PER_BATCH: 8
+  MAX_ITER: 80000
+TEST:
+  EVAL_PERIOD: 5000

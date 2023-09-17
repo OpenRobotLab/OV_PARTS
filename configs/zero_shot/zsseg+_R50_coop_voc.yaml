@@ -1,0 +1,40 @@
+_BASE_: ../maskformer_R50_bs16_20k.yaml
+ORACLE: True
+MODEL:
+  META_ARCHITECTURE: "ZeroShotObjPartMaskFormer"
+  SEM_SEG_HEAD:
+    NAME: "ZeroShotObjPartMaskFormerHead"
+    NUM_CLASSES: 74 #only used in set criterion
+    EMBEDDING_DIM: 512
+    EMBED_LAYERS: 2
+  CLIP_ADAPTER:
+    PROMPT_LEARNER: "learnable_obj_part"
+  #   # for learnable prompt
+    PROMPT_DIM: 512
+    PROMPT_SHAPE: (4, 4 ,0)
+    CLIP_MODEL_NAME: "ViT-B/16"
+    MASK_FILL: "mean"
+    MASK_EXPAND_RATIO: 1.2
+    MASK_THR: 0.5
+    MASK_MATTING: False
+    REGION_RESIZED: True
+    CLIP_ENSEMBLE: True
+    CLIP_ENSEMBLE_WEIGHT: 0.5
+    PROMPT_CHECKPOINT: 'clip_weights/voc_cpt_coop_model.pth'
+  MASK_FORMER:
+    NUM_OBJECT_QUERIES: 50
+    CLASS_WEIGHT: 1.0
+INPUT:
+  DATASET_MAPPER_NAME: "obj_part_semantic"
+  MAX_SIZE_TRAIN: 768
+  MAX_SIZE_TEST: 768
+SOLVER:
+  IMS_PER_BATCH: 8
+TEST: 
+  EVAL_PERIOD: 5000
+DATASETS:
+  TRAIN: ("voc_obj_part_sem_seg_train_obj_condition",)
+  TEST: ("voc_obj_part_sem_seg_val_obj_condition",)
+DATALOADER:
+  FILTER_EMPTY_ANNOTATIONS: True
+  NUM_WORKERS: 4

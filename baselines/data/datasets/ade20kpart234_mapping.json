@@ -1,0 +1,457 @@
+{
+    "person, individual, someone, somebody, mortal, soul": {
+        "id": 1831,
+        "parts": {
+            "head": 1206,
+            "arm": [1428, 2117],
+            "foot": [1429, 2118],
+            "leg": [1431, 2120],
+            "hand": [2119, 1430],
+            "neck": 1646,
+            "torso": 2820,
+            "back": 83,
+            "gaze": 1086
+        }
+    },
+    "door": {
+        "id": [783,774],
+        "parts": {
+            "panel": [1746,1748,774],
+            "door frame": 776,
+            "handle": 1180,
+            "knob": 1380
+        }
+    },
+    "clock": {
+        "id": 530,
+        "parts": {
+            "face": 890,
+            "frame": 1024
+        }
+    },
+    "toilet, can, commode, crapper, pot, potty, stool, throne": {
+        "id": 2793,
+        "parts": {
+            "bowl": 259,
+            "cistern": 518,
+            "lid": 1441
+        }
+    },
+    "cabinet": {
+        "id": 350,
+        "parts": {
+            "door": [774, 783],
+            "drawer": 789,
+            "front": 1031,
+            "side": 2372,
+            "skirt": 2411,
+            "top": 2814,
+            "shelf": 2329
+        }
+    },
+    "sink": {
+        "id": 2388,
+        "parts": {
+            "faucet": 895,
+            "tap": 2708,
+            "bowl": 259,
+            "pedestal": 1804,
+            "top": 2814
+        }
+    },
+    "lamp": {
+        "id": 1395,
+        "parts": {
+            "canopy": 389,
+            "light source": 1448,
+            "shade": 2311,
+            "tube": 2886,
+            "base": 136,
+            "arm": 54,
+            "cord": 618,
+            "column": 580,
+            "highlight": 1238
+        }
+    },
+    "sconce": {
+        "id": 2243,
+        "parts": {
+            "arm": 54,
+            "light source": 1448,
+            "shade": 2311,
+            "backplate": 92,
+            "highlight": 1238
+        }
+    },
+    "chair": {
+        "id": 471,
+        "parts": {
+            "leg": 1433,
+            "seat": 2272,
+            "arm": 54,
+            "stretcher": 2617,
+            "base": 136,
+            "back": 83,
+            "skirt": 2411,
+            "apron": 42,
+            "seat cushion": 2276
+        }
+    },
+    "chest of drawers, chest, bureau, dresser": {
+        "id": 491,
+        "parts": {
+            "apron": 42,
+            "drawer": 789,
+            "front": 1031,
+            "leg": 1433,
+            "door": 774
+        }
+    },
+    "chandelier, pendant, pendent": {
+        "id": 480,
+        "parts": {
+            "canopy": 389,
+            "light source": 1448,
+            "shade": 2311,
+            "bulb": 313,
+            "arm": 54,
+            "chain": 468,
+            "cord": 618,
+            "highlight": 1238
+        }
+    },
+    "bed": {
+        "id": 165,
+        "parts": {
+            "footboard": 1012,
+            "headboard": 1212,
+            "leg": 1433,
+            "side rail": 2375
+        }
+    },
+    "table": {
+        "id": 2684,
+        "parts": {
+            "drawer": 789,
+            "top": 2814,
+            "apron": 42,
+            "leg": 1433,
+            "shelf": 2329,
+            "wheel": 3035
+        }
+    },
+    "armchair": {
+        "id": 57,
+        "parts": {
+            "arm": 54,
+            "back": 83,
+            "seat": 2272,
+            "seat base": 2273,
+            "seat cushion": 2276,
+            "leg": 1433,
+            "apron": 42,
+            "back pillow": 86
+        }
+    },
+    "ottoman, pouf, pouffe, puff, hassock": {
+        "id": 1702,
+        "parts": {
+            "seat": 2272,
+            "leg": 1433,
+            "back": 83
+        }
+    },
+    "shelf": {
+        "id": 2329,
+        "parts": {
+            "door": 774,
+            "drawer": 789,
+            "front": 1031,
+            "shelf": 2329
+        }
+    },
+    "swivel chair": {
+        "id": 2679,
+        "parts": {
+            "back": 83,
+            "seat": 2272,
+            "wheel": 3035,
+            "base": 136
+        }
+    },
+    "fan": {
+        "id": 894,
+        "parts": {
+            "blade": 203,
+            "canopy": 389,
+            "tube": 2886
+        }
+    },
+    "coffee table, cocktail table": {
+        "id": 571,
+        "parts": {
+            "top": 2814,
+            "leg": 1433
+        }
+    },
+    "stool": {
+        "id": 2586,
+        "parts": {
+            "leg": [1433,1804],
+            "seat": 2272
+        }
+    },
+    "sofa, couch, lounge": {
+        "id": 2473,
+        "parts": {
+            "arm": 54,
+            "seat base": 2273,
+            "seat cushion": 2276,
+            "back pillow": 86,
+            "leg": 1433,
+            "back": 83,
+            "skirt": 2411
+           
+        }
+    },
+    "computer, computing machine, computing device, data processor, electronic computer, information processing system": {
+        "id": 591,
+        "parts": {
+            "keyboard": 1370,
+            "monitor": 1582,
+            "computer case": 589,
+            "mouse": 1611
+        }
+    },
+    "desk": {
+        "id": 724,
+        "parts": {
+            "leg": 1433,
+            "top": 2814,
+            "drawer": 789,
+            "apron": 42,
+            "door": 774,
+            "shelf": 2329
+        }
+    },
+    "wardrobe, closet, press": {
+        "id": [2985, 533],
+        "parts": {
+            "door": 774,
+            "drawer": 789,
+            "top": 2814,
+            "front": 1031,
+            "leg": 1433,
+            "mirror": 1564
+        }
+    },
+    "car, auto, automobile, machine, motorcar": {
+        "id": 401,
+        "parts": {
+            "bumper": 320,
+            "door": 774,
+            "headlight": 1213,
+            "license plate": 1439,
+            "mirror": 1564,
+            "wheel": 3035,
+            "window": [3050,3057],
+            "hood": 1259,
+            "logo": 1470,
+            "wiper": 3063
+        }
+    },
+    "bus, autobus, coach, charabanc, double-decker, jitney, motorbus, motorcoach, omnibus, passenger vehicle": {
+        "id": 327,
+        "parts": {
+            "headlight": 1213,
+            "door": 774,
+            "license plate": 1439,
+            "mirror": 1564,
+            "window": [3050,3057],
+            "wiper": 3063,
+            "wheel": 3035,
+            "logo": 1470,
+            "bumper": 320
+        }
+    },
+    "oven": {
+        "id": 1708,
+        "parts": {
+            "button panel": [339,341,342,2250], 
+            "door": 774,
+            "drawer": 789,
+            "top": 2814
+        }
+    },
+    "cooking stove, stove, kitchen stove, range, kitchen range": {
+        "id": 2598,
+        "parts": {
+            "burner": 324,
+            "stove": 2597,
+            "oven": 1708,
+            "button panel": [341,2250], 
+            "drawer": 789,
+            "door": 774
+        }
+    },
+    "microwave, microwave oven": {
+        "id": 1551,
+        "parts": {
+            "button panel": [339,341,342,2250], 
+            "front": 1031,
+            "side": 2372,
+            "top": 2814,
+            "door": 774,
+            "window": 3050
+        }
+    },
+    "refrigerator, icebox": {
+        "id": 2096,
+        "parts": {
+            "door": 774,
+            "side": 2372,
+            "button panel": 341,
+            "drawer": 789
+        }
+    },
+    "kitchen island": {
+        "id": 1374,
+        "parts": {
+            "drawer": 789,
+            "side": 2372,
+            "top": 2814,
+            "door": 774,
+            "front": 1031
+        }
+    },
+    "dishwasher, dish washer, dishwashing machine": {
+        "id": 747,
+        "parts": {
+            "button panel": [341,342],
+            "skirt": 2411,
+            "handle": 1180
+        }
+    },
+    "bookcase": {
+        "id": 239,
+        "parts": {
+            "door": 774,
+            "front": 1031,
+            "drawer": 789,
+            "side": 2372
+        }
+    },
+    "television receiver, television, television set, tv, tv set, idiot box, boob tube, telly, goggle box": {
+        "id": 2733,
+        "parts": {
+            "screen": 2250,
+            "base": 136,
+            "frame": 1024,
+            "keys": 1371,
+            "speaker": 2487,
+            "buttons": 342
+        }
+    },
+    "glass, drinking glass": {
+        "id": 1098,
+        "parts": {
+            "base": 136,
+            "bowl": 259,
+            "opening": 1690,
+            "stem": 2566
+        }
+    },
+    "pool table, billiard table, snooker table": {
+        "id": 1948,
+        "parts": {
+            "leg": 1433,
+            "bed": 165,
+            "pocket": [625,2374]
+        }
+    },
+    "van": {
+        "id": 2928,
+        "parts": {
+            "bumper": 320,
+            "door": 774,
+            "headlight": 1213,
+            "taillight": 2700,
+            "license plate": 1439,
+            "mirror": 1564,
+            "wheel": 3035,
+            "window": [3050,3057],
+            "logo": 1470,
+            "wiper": 3063
+        }
+    },
+    "airplane, aeroplane, plane": {
+        "id": 14,
+        "parts": {
+            "fuselage": 1051,
+            "stabilizer": 2523,
+            "wing": 3060,
+            "landing gear": 1403,
+            "turbine engine": 2893,
+            "propeller": 2014,
+            "door": 774
+        }
+    },
+    "truck, motortruck": {
+        "id": 2880,
+        "parts": {
+            "door": 774,
+            "headlight": 1213,
+            "license plate": 1439,
+            "wheel": 3035,
+            "window": [3050,3057],
+            "mirror": 1564,
+            "bumper": 320,
+            "logo": 1470
+        }
+    },
+    "minibike, motorbike": {
+        "id": 1563,
+        "parts": {
+            "mirror": 1564,
+            "wheel": 3035,
+            "license plate": 1439,
+            "seat": 2272
+        }
+    },
+    "washer, automatic washer, washing machine": {
+        "id": 2989,
+        "parts": {
+            "door": 774,
+            "button panel": [341,2250,342],
+            "front": 1031,
+            "side": 2372
+        }
+    },
+    "bench": {
+        "id": 181,
+        "parts": {
+            "leg": 1433,
+            "seat": 2272,
+            "arm": 54,
+            "back": 83
+        }
+    },
+    "traffic light": {
+        "id": 2836,
+        "parts": {
+            "housing": 1279,
+            "pole": 1936
+        }
+    },
+    "light": {
+        "id": 1451,
+        "parts": {
+            "shade": 2311,
+            "highlight": 1238,
+            "light source": 1448,
+            "aperture": 36,
+            "canopy": 389,
+            "diffusor": 733
+        }
+    }
+}
