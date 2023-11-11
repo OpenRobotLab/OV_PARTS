@@ -85,6 +85,10 @@
       ├─training/
       └─validation/
   ```
+  Create `{train/val}_{obj/part}_label_count.json` files for Pascal-Part-116.
+  ```bash
+  python baselines/data/datasets/mask_cls_collect.py Datasets/Pascal-Part-116/annotations_detectron2_{obj/part}/{train/val} Datasets/Pascal-Part-116/annotations_detectron2_part/{train/val}_{obj/part}_label_count.json
+  ```
 
 ### Training
 1. Training the two-stage baseline `ZSseg+`.
