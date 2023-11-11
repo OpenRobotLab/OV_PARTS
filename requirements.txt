@@ -1,4 +1,4 @@
-timm==0.6.12
+timm==0.9.1
 scikit-image==0.15.0
 scikit-learn==0.24.2
 opencv-python==4.5.5.64
@@ -8,3 +8,4 @@ mmcv-full==1.7.1
 mmsegmentation==0.29.1
 torch==1.13.1
 torchvision==0.14.1
+tokenizers==0.11.1
