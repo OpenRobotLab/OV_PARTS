@@ -1,7 +1,7 @@
 from typing import Tuple
 import numpy as np
 import torch
-import clip
+from baselines.third_party import clip
 from detectron2.utils.comm import get_local_rank, synchronize
 
 
