@@ -50,8 +50,6 @@
     conda create -n ovparts python=3.8
     conda activate ovparts
     pip install -r requirements.txt
-    cd third_party/CLIP
-    python -m pip install -e .
     ```
 
 ### Data Preparation
