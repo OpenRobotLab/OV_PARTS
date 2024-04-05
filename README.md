@@ -27,7 +27,7 @@
 **OV-PARTS** is a benchmark for Open-Vocabulary Part Segmentation by using the capabilities of large-scale Vision-Language Models (VLMs). 
 
 - **Benchmark Datasets**: Two refined versions of two publicly available datasets: 
-  - *[Pascal-Part-116](https://drive.google.com/file/d/1f5kqrM2_iK_bWmQBW3rdSnGrnke4PUbX/view)*
+  - *[Pascal-Part-116](https://drive.google.com/file/d/1hsbwNdfPe4c6yVLZDjzjPTC7NL65I-rr/view?usp=sharing)*
   - *[ADE20K-Part-234](https://drive.google.com/file/d/1EBVPW_tqzBOQ_DC6yLcouyxR7WrctRKi/view)*
 
 - **Benchmark Tasks**: Three specific tasks which provides insights into the `analogical reasoning`, `open granularity` and `few-shot adapting ` abilities of models. 
