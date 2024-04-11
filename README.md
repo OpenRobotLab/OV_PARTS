@@ -37,6 +37,9 @@
 
 - **Benchmark Baselines**: Baselines based on existing two-stage and one-stage object-level open vocabulary segmentation methods, including [ZSseg](https://arxiv.org/pdf/2112.14757.pdf), [CLIPSeg](https://arxiv.org/pdf/2112.10003.pdf), [CATSeg](https://arxiv.org/pdf/2303.11797.pdf).
 
+## 🔥 News
+We organize the Open Vocabulary Part Segmentation (OV-PARTS) Challenge in the [Visual Perception via Learning in an Open World (VPLOW) Workshop](https://vplow.github.io/vplow_4th.html). Please check our [website](https://ov-parts.github.io/)!
+
 ## 🛠 Getting Started
 ### Installation
 1. Clone this repository
